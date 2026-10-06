@@ -44,13 +44,13 @@ public class PartTimeFaculty extends EllicaEmployeePayroll {
         this.hourlyRate = hourlyRate;
     }
 
-    // Method Overriding
+    
     @Override
     public double calculateSalary() {
         return hoursWorked * hourlyRate;
     }
 
-    // Faculty Type
+   
     public void displayFacultyType() {
         System.out.println("Employee Type\t: Part-Time Faculty");
     }

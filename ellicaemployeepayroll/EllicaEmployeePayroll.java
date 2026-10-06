@@ -9,11 +9,6 @@ package ellicaemployeepayroll;
  * @author User
  */
 
-
-  
-
-
-
   
 
 public abstract class EllicaEmployeePayroll {
@@ -24,12 +19,12 @@ public abstract class EllicaEmployeePayroll {
 
     private static int employeeCount = 0;
 
-    // Default Constructor
+    
     public EllicaEmployeePayroll() {
         employeeCount++;
     }
 
-    // Parameterized Constructor
+   
     public EllicaEmployeePayroll(String employeeID, String name, String department) {
         this.employeeID = employeeID;
         this.name = name;
@@ -62,17 +57,17 @@ public abstract class EllicaEmployeePayroll {
         this.department = department;
     }
 
-    // Abstract Method
+   
     public abstract double calculateSalary();
 
-    // Regular Method
+    
     public void displayEmployeeInfo() {
         System.out.println("Employee ID\t: " + employeeID);
         System.out.println("Name\t\t: " + name);
         System.out.println("Department\t: " + department);
     }
 
-    // Method Overloading
+  
     public void displayEmployeeInfo(boolean showSalary) {
         displayEmployeeInfo();
 
@@ -81,7 +76,7 @@ public abstract class EllicaEmployeePayroll {
         }
     }
 
-    // Static Method
+  
     public static int getEmployeeCount() {
         return employeeCount;
     }

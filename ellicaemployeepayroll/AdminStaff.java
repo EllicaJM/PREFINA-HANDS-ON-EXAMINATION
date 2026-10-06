@@ -16,7 +16,7 @@ public class AdminStaff extends EllicaEmployeePayroll {
     private double basicSalary;
     private double overtimePay;
 
-    // Constructor
+    
     public AdminStaff(String employeeId, String name,
                       String department, double basicSalary,
                       double overtimePay) {
@@ -27,7 +27,7 @@ public class AdminStaff extends EllicaEmployeePayroll {
         this.overtimePay = overtimePay;
     }
 
-    // Getters and Setters
+   
     public double getBasicSalary() {
         return basicSalary;
     }
@@ -44,13 +44,13 @@ public class AdminStaff extends EllicaEmployeePayroll {
         this.overtimePay = overtimePay;
     }
 
-    // Method Overriding
+   
     @Override
     public double calculateSalary() {
         return basicSalary + overtimePay;
     }
 
-    // Employee Type
+   
     public void displayFacultyType() {
         System.out.println("Employee Type\t: Administrative Staff");
     }
